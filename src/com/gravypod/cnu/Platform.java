@@ -23,9 +23,9 @@ public enum Platform {
 		LINUX("Linux", "chrome-linux.zip", null), 
 		LINUX_64("Linux_x64", "chrome-linux.zip", null);
 		
-		public static final String LAST_CHANGED_VERSION = "https://commondatastorage.googleapis.com/chromium-browser-snapshots/%s/LAST_CHANGE"; // Platform
+		public static final String LAST_CHANGED_VERSION = "https://storage.googleapis.com/chromium-browser-continuous/%s/LAST_CHANGE"; // Platform
 		
-		public static final String LATEST_URL = "https://commondatastorage.googleapis.com/chromium-browser-snapshots/%s/%s/%s"; // Platform, version, and file.
+		public static final String LATEST_URL = "https://storage.googleapis.com/chromium-browser-continuous/%s/%s/%s"; // Platform, version, and file.
 		
 		private final String platform, zipName, binName;
 		
