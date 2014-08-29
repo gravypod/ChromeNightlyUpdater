@@ -19,6 +19,7 @@ public enum Platform {
 		
 		OSX("Mac", "chrome-mac.zip", null), 
 		WIN("Win", "chrome-win32.zip", "mini_installer.exe"), 
+		WIN_64("Win_x64", "chrome-win32.zip", "mini_installer.exe"),
 		LINUX("Linux", "chrome-linux.zip", null), 
 		LINUX_64("Linux_x64", "chrome-linux.zip", null);
 		
