@@ -174,6 +174,8 @@ public enum Platform {
 				builder.append('\n');
 			}
 			
+			sc.close();
+			
 			return builder.toString();
 			
 		}
@@ -188,6 +190,8 @@ public enum Platform {
 				builder.append(sc.nextLine());
 				builder.append('\n');
 			}
+			
+			sc.close();
 			
 			return builder.toString();
 			

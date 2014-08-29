@@ -23,8 +23,9 @@ public class Config {
 		if (!config.exists()) {
 			conf.saveConfig();
 		} else {
+			Scanner sc = null;
 			try {
-				Scanner sc = new Scanner(config);
+				sc = new Scanner(config);
 				String platform = Platform.WIN.name(), openDownload = "false", preferInstaller = "true";
 				if (sc.hasNextLine()) {
 					platform = sc.nextLine();
@@ -43,6 +44,10 @@ public class Config {
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
 				conf.saveConfig();
+			} finally {
+				if (sc != null) {
+					sc.close();
+				}
 			}
 		}
 		
